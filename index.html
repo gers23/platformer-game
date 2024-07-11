@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>game</title>
+</head>
+
+<body>
+    <header class="header">
+        <input type="text" placeholder="Enter your name..." class="name">
+        <button class="menu-mini">menu</button>
+    </header>
+
+    <main class="main">
+        <div class="container-menu">
+            <div class="menu">
+                <div class="menu-list">
+                    <button class="start">start game</button>
+                    <button class="settings">settings</button>
+                    <button class="records">records</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-settings">
+            <h2>settings</h2>
+            <div class="menu-settings">
+                <div class="control">
+                    <span>'W' or 'Space' - jump</span>
+                    <span>'A' - move to the left</span>
+                    <span>'D' - move to the right</span>
+                </div>
+                <div class="volume-container">
+                    <h3>volume</h3>
+                    <div class="slider-container">
+                        <div class="design">
+                            <span>music</span>
+                            <span class="valueVMusic">50</span>
+                        </div>
+                        <input type="range" name="volume" class="volume-slider vMusic" min="0" max="1" step="0.1" value="0.5">
+                        <div class="design">
+                            <span>sound</span>
+                            <span class="valueVSound">20</span>
+                        </div>
+                        <input type="range" name="volume" class="volume-slider vSound" min="0" max="1" step="0.1" value="0.2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-records">
+            <h2>records</h2>
+            <div class="table-records"></div>
+        </div>
+        
+        <canvas></canvas>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="year"> © 2022<a href="https://github.com/gers23" class="nav-link">gers23</a> </div>
+            <div>
+                <a href="https://rs.school/js-stage0/" target="_blank">
+                    <div class="rss"></div>
+                </a>
+            </div>
+    
+        </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+
+    <script src="./js-01/display.js"></script>
+    <script src="./js-01/engine.js"></script>
+    <script src="./js-01/controller.js"></script>
+    <script src="./js-01/audio.js"></script>
+    <script src="./js-01/main.js"></script>
+    
+</body>
+</html>
